@@ -111,7 +111,7 @@ TW_EXCLUDE_TWRPAPP      := true
 TW_INCLUDE_FASTBOOTD    := true
 TWRP_INCLUDE_LOGCAT     := true
 TW_INCLUDE_PYTHON       := true
-TW_FRAMERATE            := 60
+TW_FRAMERATE            := 120
 
 # TWRP notch offsets
 TW_STATUS_ICONS_ALIGN := center
