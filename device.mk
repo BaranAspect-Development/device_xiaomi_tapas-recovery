@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := tapas,topaz
 
+# The app "/system/bin/bootctl" doesn't currently exist in custom recoveries, so running it currently does nothing. So we added this.
+RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/bootctl
+
 # Boot control, Firmware
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery \
